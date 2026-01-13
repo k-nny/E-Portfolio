@@ -1,0 +1,91 @@
+header{
+    margin: -8px;
+    height: 50px;
+    margin-bottom: -10px;
+    padding: 10px;
+    position:sticky;
+    top: 0px;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.e-portfolio{
+    position: absolute;
+}
+div.lien{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-size: 20px;
+
+}
+.subheader{
+    position:sticky;
+    margin-left: -8px;
+    top: 70px;
+    height: 30px;
+    width:100vw;
+    padding-top: 5px;
+    background-color: rgb(224, 224, 224);
+}
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+/* LIEN */
+.dropdown-link {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* MENU */
+.dropdown-content {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: rgb(200, 200, 200);
+    min-width: 220px;
+    border-radius: 5px;
+    z-index: 100;
+
+    /* Animation */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0s linear 0.25s;
+}
+
+/* LIENS DU MENU */
+.dropdown-content a {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+/* AFFICHAGE AU HOVER */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0s;
+}
