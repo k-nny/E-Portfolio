@@ -1,19 +1,22 @@
-header{
+header {
     margin: -8px;
     height: 50px;
     margin-bottom: -10px;
     padding: 10px;
-    position:sticky;
+    position: sticky;
     top: 0px;
-    background-color: lightgray;
+    background-color: #1e3c72;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    z-index: 999;
 }
-div.e-portfolio{
+
+div.e-portfolio {
     position: absolute;
 }
-div.lien{
+
+div.lien {
     position: absolute;
     right: 10px;
     display: flex;
@@ -22,18 +25,32 @@ div.lien{
     font-size: 20px;
 
 }
-.subheader{
-    position:sticky;
-    margin-left: -8px;
+
+div.lien a {
+    color: white;
+    /* texte clair pour contraste */
+    text-decoration: none;
+}
+
+div.lien a:hover {
+    color: #6a11cb;
+    /* léger survol clair */
+}
+
+.subheader {
+    position: sticky;
     top: 70px;
     height: 30px;
-    width:100vw;
     padding-top: 5px;
-    background-color: rgb(224, 224, 224);
+    background-color: #6a11cb;
+    z-index: 999;
+    margin: -8px;
 }
+
 /* DROPDOWN */
 .dropdown {
     position: relative;
+    z-index: 999;
 }
 
 /* LIEN */
@@ -50,7 +67,7 @@ div.lien{
     position: absolute;
     top: 35px;
     left: 0;
-    background-color: rgb(200, 200, 200);
+    background-color: #6b11cb;
     min-width: 220px;
     border-radius: 5px;
     z-index: 100;
@@ -64,6 +81,7 @@ div.lien{
         opacity 0.25s ease,
         transform 0.25s ease,
         visibility 0s linear 0.25s;
+    z-index: 999;
 }
 
 /* LIENS DU MENU */
@@ -75,7 +93,7 @@ div.lien{
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(180, 180, 180);
+    background-color: #7a29d1;
 }
 
 /* AFFICHAGE AU HOVER */

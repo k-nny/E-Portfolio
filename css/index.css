@@ -1,0 +1,68 @@
+/* ================= BASE ================= */
+body {
+    background: linear-gradient(180deg, #f5f6fa, #eef1f7);
+    color: #222;
+}
+
+/* TITRE PRINCIPAL */
+h2 {
+    text-align: center;
+    margin: 100px 0 50px 0;
+    font-size: 2rem;
+    color: #1e3c72;
+}
+
+/* ================= CONTENU PRINCIPAL ================= */
+body > p {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* Premier paragraphe (intro) */
+body > p:first-of-type {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+/* ================= LIENS ================= */
+body a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+body a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #6a11cb;
+    transition: width 0.25s ease;
+}
+
+body a:hover::after {
+    width: 100%;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    body > p {
+        margin: 20px 15px;
+        font-size: 16px;
+        padding: 18px;
+    }
+
+    body > p:first-of-type {
+        font-size: 20px;
+    }
+}

@@ -1,22 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 /* CONTAINER */
 .contact-container {
     max-width: 500px;
     margin: 100px auto;
-    background: white;
+    background: #ffffff;
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
 /* TITRE */
 .contact-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #1e3c72;
 }
 
 /* FORMULAIRE */
@@ -42,15 +43,16 @@ textarea {
 /* BOUTON */
 button {
     padding: 10px;
-    background-color: #333;
+    background-color: #1e3c72;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #6a11cb;
 }
 
 /* MESSAGES */

@@ -1,33 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-/* CONTAINER */
 .formation-container {
     max-width: 1250px;
     margin: 100px auto;
     padding: 20px;
 }
 
-/* TITRE */
-.formation-container h2 {
+h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 100px 0 50px 0;
+    font-size: 2rem;
+    color: #1e3c72;
 }
 
-/* CARD */
 .formation-card {
     display: flex;
     gap: 25px;
-    background: white;
+    background: #ffffff;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
-/* IMAGE */
 .formation-card img {
     width: 220px;
     height: 160px;
@@ -35,9 +33,9 @@ body {
     border-radius: 8px;
 }
 
-/* TEXTE */
 .formation-content h3 {
     margin-bottom: 10px;
+    color: #1e3c72;
 }
 
 .formation-meta {
@@ -47,9 +45,9 @@ body {
 
 .formation-content p {
     line-height: 1.5;
+    color: #333;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     .formation-card {
         flex-direction: column;
